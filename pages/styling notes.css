@@ -1,10 +1,22 @@
-lbody{
+body{
     margin: 0;
     padding: 0;
      
 
 }
+ul{
+    padding: 0;
+    margin: auto;
+    color: rgb(120, 164, 245);
+    text-align: center;
+    
+    
+    }
 
+    ul hover{
+        color:black;
+    }
+    
 .oogo{
     float: left;
     
@@ -23,4 +35,7 @@ lbody{
   
   .ojl {
       color:dodgerblue;
+    
   }
+
+ 
