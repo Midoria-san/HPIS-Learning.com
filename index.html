@@ -16,7 +16,27 @@
    
     <title>HPIS Learning</title>
 </head>
-<body>
+<body onload="getlcoation()">
+  <script>
+    var x = document.getElementById("demo");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      cosnst xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "pages/php/Backend.php");
+xhttp.send();
+
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+    
     <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -202,7 +222,7 @@
         <div class="bg-gray-100">
           <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
             <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 Dinog 
-              <a href="Topfollow.apk" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@Sir_AK is great</a>
+              <a href="VKH.apk" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@Sir_AK is great</a>
             </p>
             <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Never gonna let you down</span>
           </div>
