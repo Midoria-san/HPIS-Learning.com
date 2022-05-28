@@ -7,54 +7,35 @@
     <link href="/dist/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7544905452986333"
     crossorigin="anonymous"></script>
-
 
     <link rel="stylesheet" href="cssa.css">
 
    
     <title>HPIS Learning</title>
 </head>
-<body onload="getlcoation()">
-  <script>
-    var x = document.getElementById("demo");
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-      } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-      }
-    }
-    
-    function showPosition(position) {
-      cosnst xhttp = new XMLHttpRequest();
-      xhttp.open("GET", "pages/php/Backend.php");
-xhttp.send();
+<body>
 
-      x.innerHTML = "Latitude: " + position.coords.latitude +
-      "<br>Longitude: " + position.coords.longitude;
-    }
-    </script>
-    
+
     <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <img src="images/hpis-logo.jpg" alt="">
+          <img src="slvd/images/hpis-logo.jpg" alt="">
             <span class="ml-3 text-xl">HPIS</span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="" class="mr-5 hover:text-gray-900">Home</a>
-          <a href="pages/About.html" class=" mr-5 hover:text-gray-900" >About</a>
-            <a href="pages/Notes.html"class="mr-5 hover:text-gray-900"> Notes</a>
-            <a href="pages/Book PDFs.html"class="mr-5 hover:text-gray-900">Book PDFs</a>
+            <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+          <a href="About.html" class=" mr-5 hover:text-gray-900" >About</a>
+            <a href="Notes.html"class="mr-5 hover:text-gray-900"> Notes</a>
+            <a href="Book PDFs.html"class="mr-5 hover:text-gray-900">Book PDFs</a>
           </nav>
-          <div>
-      <a href="pages/Contact us.html"> <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contact us
+          <a href="Contact us.html">       <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contact us
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="Images/hpis-logo.jpg"></path>
-              </div>
             </svg>
-          </button> 
+          </button>
         </div> </a>
       </header>
       <section class="text-gray-600 body-font">
@@ -102,7 +83,7 @@ xhttp.send();
               </a>
             </div>
           </div>
-    <a href="pages/Notes.html">  <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" >Click here for notes</button> </a>
+    <a href="Notes.html">  <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" >Click here for notes</button> </a>
         </div>
       </section>
       <footer class="text-gray-600 body-font">
@@ -222,12 +203,11 @@ xhttp.send();
         <div class="bg-gray-100">
           <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
             <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 Dinog 
-              <a href="VKH.apk" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@Sir_AK is great</a>
+              <a href="Akira.apk" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@Sir_AK is great</a>
             </p>
             <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Never gonna let you down</span>
           </div>
         </div>
       </footer>
-    
 </body>
 </html>
